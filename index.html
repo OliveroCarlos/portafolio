@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>encriptador</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="titulo">Encriptador alura</h1>
+
+        <input type="text" placeholder="Ingresa el texto para encriptar." id="texto-encriptado">
+
+        <textarea name="resultado" id="texto-desencriptado" cols="30" rows="10" placeholder=""></textarea>
+
+        <button class="boton-copiar" id="boton-copiar">
+            <p class="boton-copiar-texto">Copiar</p>
+        </button>
+
+        <h1><img src="imagenes/Vector.png" alt=""></h1>
+
+        <div class="rectangulo">
+
+            <div class="muñeco">
+                <img src="imagenes/Muñeco.png" alt="">
+            </div>
+
+            <div class="mensajes">
+                <input type="text" class="input-desencriptar" placeholder="Pega o escribe el mensaje cifrado" id="texto-encriptado2">
+                <textarea name="" id="texto-desencriptado2" cols="30" rows="10" class="textArea-desencriptar"></textarea>
+            </div>
+
+        </div>
+
+        <div class="botones">
+            <button type="button" class="boton-encriptar" id="boton-encriptador">
+                <p class="b-e">Encriptar</p>
+            </button>
+            <button class="boton-desencriptar" id="boton-desencriptador">
+                <p class="b-d">Desencriptar ==></p>
+            </button>
+        </div>
+
+        <div class="advertencia">
+            <img src="imagenes/Vector (1).png" alt="" class="icono">
+            <p class="p-ad">Solo letra minusculas y sin acentos</p>
+        </div>
+    </div>
+
+
+</body>
+<script>
+    var btn = document.querySelector("#boton-encriptador");
+    btn.onclick = encriptar;
+
+    var btn2 = document.querySelector("#boton-desencriptador");
+    btn2.onclick = desencriptar;
+
+    var btn3 = document.querySelector("#boton-copiar");
+    btn3.onclick = copiar;
+</script>
+
+
+</html>

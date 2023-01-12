@@ -1,0 +1,398 @@
+
+.container {
+  position: relative;
+  width: 1480px;
+  height: 1080px;
+
+  /* Light blue/light-blue-100 */
+
+  background: #f3f5fc;
+}
+
+.titulo{
+  position: absolute;
+  width: 577px;
+  height: 48px;
+  left: 240px;
+  top: 40px;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  /* identical to box height, or 48px */
+
+  /* Dark blue/dark-blue-300 */
+
+  color: #0a3871;
+  text-align: center;
+}
+
+input {
+  position: absolute;
+  width: 577px;
+  height: 48px;
+  left: 240px;
+  top: 168px;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 150%;
+  /* identical to box height, or 48px */
+
+  /* Dark blue/dark-blue-300 */
+
+  color: #0a3871;
+  background: #f3f5fc;
+  text-align: center;
+  border-radius: 24px;
+}
+
+textarea{
+  position: absolute;
+  width: 577px;
+  height: 48px;
+  left: 240px;
+  top: 300px;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  /* identical to box height, or 48px */
+
+  /* Dark blue/dark-blue-300 */
+
+  color: #0a3871;
+  background: #f3f5fc;
+  border: 0;
+  text-align: center;
+}
+
+.boton-copiar{
+  position: absolute;
+  left: 90px;
+  top: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+
+  width: 100px;
+  height: 60px;
+
+  /* Light gray */
+
+  background: #d8dfe8;
+  /* Dark blue/dark-blue-300 */
+
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.boton-copiar:hover{
+  cursor: pointer;
+}
+
+.boton-copiar-texto{
+  width: 0;
+  margin: 20px ;
+  font-size: 20px;
+  color: #0a3871;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  line-height: 19px;
+  text-align: center;
+}
+
+
+img {
+  margin: 20px;
+}
+
+.rectangulo {
+  position: absolute;
+  width: 400px;
+  height: 650px;
+  left: 1000px;
+  top: 40px;
+  background: #ffffff;
+  /* shadow */
+
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+}
+
+.muñeco {
+  position: absolute;
+  width: 336px;
+  height: 304px;
+  left: 20px;
+  top: 30px;
+}
+
+.mensajes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  position: absolute;
+  width: 336px;
+  height: 122px;
+  left: 34px;
+  top: 400px;
+}
+
+.input-desencriptar {
+  width: 320px;
+  height: 40px;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  /* or 29px */
+
+  text-align: center;
+
+  /* Gray/gray-500 */
+
+  color: #343a40;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+  left: auto;
+
+  top: 0px;
+}
+
+.textArea-desencriptar {
+  width: 320px;
+  height: 100px;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  /* or 29px */
+
+  text-align: center;
+
+  /* Gray/gray-500 */
+
+  color: #343a40;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+  left: auto;
+
+  top: 100px;
+}
+
+.ingresa-t {
+  width: 336px;
+  height: 48px;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+
+  text-align: center;
+
+  /* Gray/gray-400 */
+
+  color: #495057;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+
+  position: absolute;
+  width: 680px;
+  height: 67px;
+  left: 240px;
+  top: 600px;
+}
+
+.boton-encriptar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+
+  width: 328px;
+  height: 67px;
+
+  background: #0a3871;
+  border-radius: 24px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.boton-encriptar:hover {
+  cursor: pointer;
+}
+
+.b-e {
+  width: 280px;
+  height: 19px;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  /* White */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.boton-desencriptar {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+
+  width: 328px;
+  height: 67px;
+
+  /* Light gray */
+
+  background: #d8dfe8;
+  /* Dark blue/dark-blue-300 */
+
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.boton-desencriptar:hover {
+  cursor: pointer;
+}
+
+.b-d {
+  width: 280px;
+  height: 19px;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center ;
+
+  /* Dark blue/dark-blue-300 */
+
+  color: red;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.advertencia{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 229px;
+height: 18px;
+left: 240px;
+top: 550px;
+}
+
+.p-ad{
+    width: 205px;
+height: 18px;
+
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+/* identical to box height, or 18px */
+
+
+/* Gray/gray-400 */
+
+color: #495057;
+
+opacity: 0.8;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.icono{
+    margin: 0;
+}
+
