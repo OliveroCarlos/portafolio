@@ -49,6 +49,12 @@ input {
   background: #f3f5fc;
   text-align: center;
   border-radius: 24px;
+  border: none;
+  text-transform: lowercase;
+}
+
+input:focus {
+  outline: none;
 }
 
 textarea{
@@ -69,8 +75,13 @@ textarea{
 
   color: #0a3871;
   background: #f3f5fc;
-  border: 0;
+  border: none;
   text-align: center;
+  text-transform: lowercase;
+}
+
+textarea:focus {
+  outline: none;
 }
 
 .boton-copiar{
