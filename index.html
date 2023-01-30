@@ -12,47 +12,57 @@
 </head>
 
 <body>
-    <div class="container">
+    <header>
+        <div class="vector">
+            <h1><img src="imagenes/Vector.png" alt=""></h1>
+        </div>
+        <div class="titulo">
+            <h1 class="titulo">Encriptador alura</h1>
+        </div>
+    </header>
 
-        <h1 class="titulo">Encriptador alura</h1>
 
-        <input type="text" placeholder="Ingresa el texto para encriptar." id="texto-encriptado">
+    <main>
 
-        <textarea name="resultado" id="texto-desencriptado" cols="30" rows="10" placeholder=""></textarea>
 
-        <button class="boton-copiar" id="boton-copiar">
-            <p class="boton-copiar-texto">Copiar</p>
-        </button>
+        <section class="seccion1">
+            <input type="text" placeholder="Ingresa el texto para encriptar." id="texto-encriptado">
 
-        <h1><img src="imagenes/Vector.png" alt=""></h1>
+            <textarea name="resultado" id="texto-desencriptado" cols="30" rows="10" placeholder=""></textarea>
 
-        <div class="rectangulo">
+
+            <div class="botones">
+                <button type="button" class="boton-encriptar" id="boton-encriptador">
+                    <p class="b-e">Encriptar Texto</p>
+                </button>
+                <button class="boton-copiar" id="boton-copiar">
+                    <p class="boton-copiar-texto">Copiar Texto</p>
+                </button>
+            </div>
+            <div class="advertencia">
+                <img src="imagenes/Vector (1).png" alt="" class="icono">
+                <p class="p-ad">Solo letra minusculas y sin acentos</p>
+            </div>
+
+
+        </section>
+
+        <section class="seccion2">
+            <input type="text" class="input-desencriptar" placeholder="Pega o escribe el mensaje cifrado"
+                id="texto-encriptado2">
+            <textarea name="" id="texto-desencriptado2" cols="30" rows="10" class="textArea-desencriptar"></textarea>
+
 
             <div class="muñeco">
-                <img src="imagenes/Muñeco.png" alt="">
-            </div>
+                <button class="boton-desencriptar" id="boton-desencriptador">
+                    <p class="b-d">Desencriptar</p>
+                </button>
+            </div class="muñeco">
 
-            <div class="mensajes">
-                <input type="text" class="input-desencriptar" placeholder="Pega o escribe el mensaje cifrado" id="texto-encriptado2">
-                <textarea name="" id="texto-desencriptado2" cols="30" rows="10" class="textArea-desencriptar"></textarea>
-            </div>
+        </section>
 
-        </div>
 
-        <div class="botones">
-            <button type="button" class="boton-encriptar" id="boton-encriptador">
-                <p class="b-e">Encriptar</p>
-            </button>
-            <button class="boton-desencriptar" id="boton-desencriptador">
-                <p class="b-d">Desencriptar ==></p>
-            </button>
-        </div>
-
-        <div class="advertencia">
-            <img src="imagenes/Vector (1).png" alt="" class="icono">
-            <p class="p-ad">Solo letra minusculas y sin acentos</p>
-        </div>
-    </div>
+    </main>
 
 
 </body>
